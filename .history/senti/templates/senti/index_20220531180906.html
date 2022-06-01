@@ -1,0 +1,119 @@
+{%  %}
+
+
+{% block content %}
+    <section class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container-fluid mx-5">
+                <a class="navbar-brand fw-bold nav-link" href="index.html">Senti • <span><i
+                            class="fa-solid fa-coins"></i></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fw-bold" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link txt-hover-underline" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <!-- put the dropdown menu here-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dashboard
+                            </a>
+                            <ul class="dropdown-menu light fw-bold" aria-labelledby="navbarDropdow">
+                                <li>
+                                    <a class="dropdown-item nav-link fw-bold" href="login.html">Log in</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider light fw-bold" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item nav-link fw-bold" href="createAccount.html">Sign up</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="Home" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+
+        <div class="container-lg border-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 text-center d-none d-md-block">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="./images/modernschool.jpg" class="d-block w-100 rounded" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Monfort Technical School</h5>
+                                    <p>We are happy that this system has been able to let students gain control of their
+                                        finance</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/modernschool2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Glorious High School</h5>
+                                    <p>Girls here enjoy the openness of their financial expenditures</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/modernschool3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Montegomery International School</h5>
+                                    <p>"The way i am able to look after my studies and at the same time be concious with
+                                        the financial standings, is just amazing", Bucha Hamad - Student</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/modernschool5.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Malaika O&A Secondary School</h5>
+                                    <p>"As a parent i am happy that i can monitor my kids money use", Flora Mangi -
+                                        Parent</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/school.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>High View Secondary School</h5>
+                                    <p>"It has been a life saver in the way we now operate and serve the students here
+                                        at our school", Meshack Burkina - Shop Attendant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 flex text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Senti • <span><i
+                            class="fa-solid fa-coins"></i></span></a></div>
+                        <div class="display-6 text-muted">Monitoring Students' PM</div>
+                    </h1>
+                    <p class="lead my-2 text-muted">
+                        Senti is an application that is devotted to help schools, students and parents share an intergrated environment financial 
+                        that best suits them and most importantly enable students focus fully on their studies with a little sweat on matters concerning to finances
+                    </p>
+                    <!-- <a href="#pricing" class="btn btn-secondary btn-md"> Buy now</a> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="Home">
+    </section>
+
+{% endblock content %}
+
+   

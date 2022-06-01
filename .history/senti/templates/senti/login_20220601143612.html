@@ -1,0 +1,59 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+  <section>
+<div class="container-lg col-3 d-lg-block d-none mb-3">
+  <div class="row small">
+    <div class="col align-self-center bg-light rounded shadow-lg pt-3 ">
+      <h1 class="text-center display-5 fw-bold">Senti • <span><i class="fa-solid fa-coins"></i></span> </h1>
+      <hr>
+      <div class=" m-3 text-sm">
+        <label for="floatingInput">Username or email</label>
+        <input style="text-decoration: small;" type="email" class="form-control col-12 small"
+          id="exampleFormControlInput1" placeholder="">
+      </div>
+      <div class="m-3">
+        <label for="floatingInput">Password</label>
+        <input style="font-family:'Font Awesome 6 Free';font-weight:bold;text-transform: lowercase;" type="password"
+          class="form-control col-12 text-lowercase " id="exampleFormControlInput1" placeholder="">
+      </div>
+      <div class="form-check m-3 small">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label " for="flexCheckDefault">
+          Remember me
+        </label>
+        <a href="resetPwd.html" class="text-end" style="text-decoration: none;padding-left:50px">Forgot password? </a>
+      </div>
+      <a href="bursar.html">
+        <button type="button" class="btn col-md-11 btn-block btn-success m-3 fw-bold text-center shadow">Login </button>
+      </a>
+    </div>
+
+  </div>
+</div>
+  </section>
+  <div>
+    <p class="text-center small">Don't have an account? <a href="createAccount.html"
+        style="text-decoration: none;"><span class="text-center">Register</span></a></p>
+    <p class="text-center small"><a href="#" style="text-decoration: none;"><span class="text-center">Terms
+          & Privacy policy</span></a></p>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    {% endblock content %}

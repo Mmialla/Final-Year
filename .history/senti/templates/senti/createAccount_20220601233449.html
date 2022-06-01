@@ -1,0 +1,115 @@
+{% extends 'base-index.html' %}
+{% load static %}
+{% block content %}
+
+
+<body class="">
+
+    <body class="small">
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+                <div class="container-fluid mx-5">
+                    <a class="navbar-brand nav-link fw-bold text-muted" href="index.html">Senti • <span><i
+                                class="fa-solid fa-coins"></i></span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Clients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdow small">
+                                    <li><a class="dropdown-item nav-link" href="login.html">Log
+                                            in</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item nav-link" href="createAccount.html">Sign up</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </nav>
+        </section>
+        <div class="container-lg justify-center col-4 d-lg-block d-none pt-3 bg-light rounded-3 shadow mb-3  mt-5">
+            <h1 class="text-center display-5 fw-bold">Senti • <span><i class="fa-solid fa-coins"></i></span>
+            </h1>
+            <hr>
+            <h1 class="text-center display-5 text-muted"></h1>
+            <P class="text-center text-muted">Student Pocket Money Management has become much more easy,fill-in
+                the form below to get started</p>
+
+
+            <div class="col pb-2 pt-3 small">
+                <input type="email" class="form-control col-12" id="exampleFormControlInput1" placeholder="School name">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input type="email" class="form-control col-12" id="exampleFormControlInput1"
+                        placeholder="School email">
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control col-12" id="exampleFormControlInput1"
+                        placeholder="School phonenumber">
+                </div>
+
+            </div>
+            <div class="row pt-2">
+                <div class="col">
+                    <input type="email" class="form-control col-12" id="exampleFormControlInput1"
+                        placeholder="Enter password">
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control col-12" id="exampleFormControlInput1"
+                        placeholder="Confirm password">
+                </div>
+
+            </div>
+            <div class="form-check m-3 small rounded-circle">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label " for="flexCheckDefault">
+                    I agree to the "Terms and policy"
+                </label>
+
+            </div>
+            <a href="Bursar.html">
+                <button type="button" type="submit"
+                class="btn col-md-12 mb-4 btn-block btn-success fw-bold text-center shadow small">Register</button>
+            </a>
+
+
+        </div>
+        <div class="pt-2 container-fluid col-4 small">
+
+            <p class="text-center">Already have an account? <a href="login.html" style="text-decoration: none;"><span
+                        class="text-center">Log
+                        in</span></a>
+            </p>
+            <p class="text-center pb-3"><a href="#" style="text-decoration: none;"><span class="text-center">Terms
+                        & Privacy policy</span></a></p>
+        </div>
+
+
+    </body>
+
+{% endblock content %}
