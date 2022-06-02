@@ -1,0 +1,228 @@
+{% extends 'base-.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Profile</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="bursar.html">Home</a></li>
+          <li class="breadcrumb-item">Users</li>
+          <li class="breadcrumb-item active">Profile</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <div class="col-xxl">
+
+      <div class="card">
+        <div class="card-body pt-3">
+          <!-- Bordered Tabs -->
+          <ul class="nav nav-tabs nav-tabs-bordered">
+
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Students</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Shopkeepers</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Make Transactions</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#new-account">Add account</button>
+            </li>
+
+          </ul>
+          <div class="tab-content pt-2">
+
+            <div class="tab-pane fade show active profile-overview" id="profile-overview">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID Number</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Balance(Tsh.) </th>
+                    <th scope="col">Parent/Guardian</th>
+                    <th scope="col">Contact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2022-04-0734</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>45,728</td>
+                    <td>Johnstone Otto</td>
+                    <td>0683244252</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2022-04-4567</th>
+                    <td>Jacob</td>
+                    <td>Trent</td>
+                    <td>99,234</td>
+                    <td>Michael Trent</td>
+                    <td>0683234252</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2022-04-1324</th>
+                    <td>Lantern </td>
+                    <td>Albert</td>
+                    <td>168,234</td>
+                    <td>Miles Albert</td>
+                    <td>0683236252</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2022-04-4656</th>
+                    <td>Bennito</td>
+                    <td>Aloha</td>
+                    <td>168,343</td>
+                    <td>Grace Aloha</td>
+                    <td>0683234552</td>
+                  </tr>
+                </tbody>
+
+              </table>
+              <div class="container-fluid align-content-end txt-end">
+                <a style="border: 5px;font-weight:bold;" href="createAccount.html">View more</a>
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade profile-edit" id="profile-edit">
+
+              <!-- Profile Edit Form -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID Number</th>
+                    <th scope="col">First name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Contact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">001</th>
+                    <td>Peter</td>
+                    <td>Mugisha</td>
+                    <td>0683244250</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">002</th>
+                    <td>Pety</td>
+                    <td>Mundaki</td>
+                    <td>0683244252</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">003</th>
+                    <td>Baraka</td>
+                    <td>Mugilila</td>
+                    <td>068324425</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">004</th>
+                    <td>Fatma</td>
+                    <td>Mungai</td>
+                    <td>0683244255</td>
+                  </tr>
+                </tbody>
+
+              </table>
+              <a style="font-weight:bold;" href="#">View more</a>
+            </div>
+            <div class="tab-pane fade pt-3 col-" id="profile-change-password">
+              <!-- Change Password Form -->
+              <form class="container-fluid justify-content-center align-content-center">
+                
+                <div class="row mb-3">
+                  <label for="newPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="newpassword" type="password" class="form-control" id="newPassword"
+                      placeholder="ID Number">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="renewPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="renewpassword" type="password" class="form-control" id="renewPassword"
+                      placeholder="Amount">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <button type="deposit" class="btn btn-success fw-bold mx-5">Deposit</button>
+                    <button type="cashout" class="btn btn-danger fw-bold mx-5">Cashout</button>
+                  </div>
+                </div>               
+            </div><div class="tab-pane fade pt-3 col-" id="new-account">
+              <!-- Change Password Form -->
+              <form class="container-fluid justify-content-center align-content-center">
+                <div class="row mb-3">
+                  <label for="currentPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="password" type="password" class="form-control" id="currentPassword"
+                      placeholder="First name">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="newPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="newpassword" type="password" class="form-control" id="newPassword"
+                      placeholder="Last name">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="newPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="newpassword" type="password" class="form-control" id="newPassword"
+                      placeholder="Parent/guardian">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="newPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="newpassword" type="password" class="form-control" id="newPassword"
+                      placeholder="Contact">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="newPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="newpassword" type="password" class="form-control" id="newPassword"
+                      placeholder="ID Number">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="renewPassword" class="col-md-4 col-form-label"></label>
+                  <div class="col-md-4">
+                    <input name="renewpassword" type="password" class="form-control" id="renewPassword"
+                      placeholder="Amount">
+                  </div>
+                </div>
+                
+                  <div class="container fluid text-center col-md-4">
+                    <button type="deposit" class="btn btn-primary fw-bold mx-5 btn-block">Create Account</button>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+<!-- End #main -->
+
+  {% endblock content %}
